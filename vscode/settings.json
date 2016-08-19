@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.renderWhitespace": true,
+    "editor.trimAutoWhitespace": true,
+
+    "editor.rulers": [120],
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/node_modules": true,
+        "**/project.lock.json": true,
+        "**/.vscode": true
+    },
+
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}
