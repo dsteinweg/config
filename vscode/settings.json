@@ -1,10 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.fontSize": 16,
-
     "editor.renderWhitespace": true,
     "editor.trimAutoWhitespace": true,
-
     "editor.rulers": [120],
 
     "files.exclude": {
@@ -15,7 +13,14 @@
         "**/project.lock.json": true,
         "**/.vscode": true
     },
+    "files.trimTrailingWhitespace": true,
 
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+
+    "terminal.external.windowsExec": "Powershell.exe",
+    "terminal.integrated.shell.windows": "\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+    // for work
+    //"http.proxyStrictSSL": false
 }
