@@ -1,0 +1,45 @@
+https://dsteinweg.com {
+    tls darren@steinwegs.com
+    reverse_proxy / ghost:2368
+}
+
+https://www.dsteinweg.com {
+    tls darren@steinwegs.com
+    redir https://dsteinweg.com
+}
+
+http://www.dsteinweg.com {
+    redir https://dsteinweg.com
+}
+
+https://teacherpouch.com {
+    tls darren@steinwegs.com
+    reverse_proxy teacherpouch.com tp:5000
+    log {
+        output file /srv/teacherpouch.log
+    }
+}
+
+https://www.teacherpouch.com {
+    tls darren@steinwegs.com
+    redir https://teacherpouch.com
+}
+
+http://www.teacherpouch.com {
+    redir https://teacherpouch.com
+}
+
+https://www.moodleweb.net {
+    tls darren@steinwegs.com
+    redir https://moodleweb.net
+}
+
+http://www.moodleweb.net {
+    redir https://moodleweb.net
+}
+
+https://moodleweb.net {
+    tls darren@steinwegs.com
+    root * /var/www/moodleweb
+    file_server
+}
