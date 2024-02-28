@@ -10,5 +10,6 @@ docker run \
   -e "ACME_AGREE=true" \
   --link ghost:ghost \
   --link tp:tp \
+  --link emma:emma \
   caddy
 
